@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+}
+
+
+.cTitle{
+    width: 100%;
+    height: max-content;
+    text-align: center;
+}
+
+.title{
+    font-family: 'Carter One', cursive;
+    font-size: 50px;
+    color: rgb(0, 136, 255);
+    word-spacing: 10px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+
+.cWrite{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.write{
+    width: max-content;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 103px;
+}
+
+.tapeText{
+    width: 300px;
+    height: 15px;
+    border: 1px solid rgba(192, 192, 192, 0.621);
+    border-radius: 10px;
+    padding: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.tapeText:focus-visible{
+    outline: 2px solid #242bff;
+}
+
+.ajouter{
+    height: 45px;
+    width: 100px;
+    border-radius: 20px;
+    border: 1px solid;
+    cursor: pointer;
+    margin-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    background: #242bff;
+}
+.ajouter:hover{
+    background: #4d53ff;
+    transform: scale(0.98);
+}
+
+
+.cList{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+}
+
+.cadreList{
+    width: 540px;
+    height: 300px;
+    background: white;
+    margin-top: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.list{
+    width: 100%;
+    height: 70px;
+    background: #242bff;
+    border-radius: 10px;
+    box-shadow: 1px 2px 4px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: white;
+    animation: animTodo 0.3s cubic-bezier(0, 0, 0.37, 1.32);
+}
+
+@keyframes animTodo{
+    from{
+        transform: translateY(-10px);
+        opacity: 0.6;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.tiret{
+    margin: 40px;
+}
+
+.fa-solid.fa-trash-can{
+    font-size: 25px;
+    cursor: pointer;
+    margin: 30px;
+}
+.fa-solid.fa-trash-can:hover{
+    transform: scale(0.9);
+}
